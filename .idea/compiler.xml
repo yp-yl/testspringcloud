@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="erueka-customer" />
+        <module name="erueka-ribbon" />
+        <module name="erueka-server" />
+        <module name="eureka-feign" />
+        <module name="first-service" />
+        <module name="order-server" />
+        <module name="product-server" />
+        <module name="springcloud" />
+        <module name="zuul-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="erueka-customer" target="1.8" />
+      <module name="erueka-ribbon" target="1.8" />
+      <module name="erueka-server" target="1.8" />
+      <module name="eureka-feign" target="1.8" />
+      <module name="first-service" target="1.8" />
+      <module name="order-server" target="1.8" />
+      <module name="product-server" target="1.8" />
+      <module name="springcloud" target="1.8" />
+      <module name="zuul-gateway" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="erueka-customer" options="" />
+      <module name="erueka-ribbon" options="" />
+      <module name="erueka-server" options="" />
+      <module name="eureka-feign" options="" />
+      <module name="first-service" options="" />
+      <module name="order-server" options="" />
+      <module name="product-server" options="" />
+      <module name="springcloud" options="" />
+      <module name="zuul-gateway" options="" />
+    </option>
+  </component>
+</project>

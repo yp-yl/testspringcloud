@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/erueka-customer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/erueka-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/erueka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/first-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-gateway" charset="UTF-8" />
+  </component>
+</project>

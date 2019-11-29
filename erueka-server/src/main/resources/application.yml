@@ -1,0 +1,14 @@
+server:
+  port: 1000
+
+eureka:
+  instance:
+    hostname: eureka1
+  server:
+    enable-self-preservation: false #关闭自我保护模式
+    eviction-interval-timer-in-ms: 5000 #续期时间，即扫描失效事务的间隔时间
+  client:
+    register-with-eureka: false #设置成false，不会注册到其他服务器上
+    fetch-registry: false #检索服务选项，当设置为True(默认值)时，会进行服务检索,注册中心不负责检索服务。
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

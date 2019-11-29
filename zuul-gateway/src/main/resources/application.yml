@@ -1,0 +1,28 @@
+server:
+  port: 17010
+
+#服务名称
+spring:
+  application:
+    name: zuul-gateway
+
+#指令注册地址
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 15
+  client:
+    service-url:
+      #defaultZone: http://eureka1:1000/eureka/,http://eureka2:1001/eureka/,http://eureka3:1002/eureka/
+      defaultZone: http://eureka1:1000/eureka/
+
+#自定义路由映射
+zuul:
+  routes:
+    order-server: /apigateway/order/**
+    product-server: /apigateway/product/**
+    #统一入口为上面的配置，其他入口忽略
+  ignored-patterns: /*-service/**
+  #忽略整个服务，对外提供接口
+  ignored-services: order-service
