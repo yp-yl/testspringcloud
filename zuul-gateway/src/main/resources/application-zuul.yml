@@ -4,7 +4,9 @@ zuul:
   routes:
     order-server: /apigateway/order/**
     product-server: /apigateway/product/**
-    service-security: /apigateway/security/**
+    service-security:
+      path: /apigateway/security/**
+      sensitive-headers: Cookie,set-Cookie,Authorization
     #统一入口为上面的配置，其他入口忽略
   ignored-patterns: /*-service/**
   #忽略整个服务，对外提供接口
