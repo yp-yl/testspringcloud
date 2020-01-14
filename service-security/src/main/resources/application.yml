@@ -1,0 +1,29 @@
+server:
+  port: 1203
+spring:
+  application:
+    name: service-security
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/securty_oauth?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#---------eureka
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 15
+  client:
+    service-url:
+      #defaultZone: http://eureka1:1000/eureka/,http://eureka2:1001/eureka/,http://eureka3:1002/eureka/
+      defaultZone: http://eureka1:1000/eureka/
+security:
+  oauth2:
+    resource:
+      filter-order: 3 #配置此选项是为了让认证进入oauth2,而不是security
